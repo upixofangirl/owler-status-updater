@@ -3,8 +3,8 @@ import json
 from base64 import b64encode # Shouldn't be necessary, but keep it still.
 
 # Login section
-username = "Fluffy"
-password = "hu$>++~vc7'#Hie"
+username = "Sample Text"
+password = "Sample Text"
 login_request = requests.get("https://api.owler.cloud/v1/account/verify_credentials.json", auth=(username, password))
 # Status code checks
 if login_request.status_code == 401:
